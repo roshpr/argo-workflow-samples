@@ -1,7 +1,8 @@
 Add additional roles for API group helmrelease to Argo role
 
-kubectl get role argo-role  -n argo -o yaml
+$ kubectl get role argo-role  -n argo -o yaml > argo_role.yaml
 
+Add the API group helm.fluxcd.io
 ====
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
@@ -114,3 +115,5 @@ rules:
   - get
   - delete
 =====
+
+kubectl apply -f  argo_role.yaml
