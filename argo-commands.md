@@ -1,6 +1,6 @@
 #### Random commands
-List all through argo cli
-* argo list --verbose --loglevel debug --all-namespaces
+* List all through argo cli
+  * argo list --verbose --loglevel debug --all-namespaces
 Submit a workflow
 * argo submit -n argo workflow2.yaml
 Get all workflows
