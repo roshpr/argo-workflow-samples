@@ -9,3 +9,7 @@ Get all argo roles
 * kubectl get role  -n argo
 Get argo service account yaml
 * kubectl get sa argo -n argo -o yaml
+Create service account
+* kubectl create serviceaccount workflow -n argo
+Create role binding with exist argo-role
+* kubectl create rolebinding workflow --role=argo-role --serviceaccount=argo:workflow
