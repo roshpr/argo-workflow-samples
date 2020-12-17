@@ -21,3 +21,5 @@
   * kubectl create serviceaccount workflow -n argo
 * Create role binding with exist argo-role
   * kubectl create rolebinding workflow --role=argo-role --serviceaccount=argo:workflow
+* Create K8 RBAC ClusterRole across namespace
+  * https://medium.com/faun/kubernetes-rbac-use-one-role-in-multiple-namespaces-d1d08bb08286
