@@ -5,6 +5,10 @@ Submit a workflow
 * argo submit -n argo workflow2.yaml
 Get all workflows
 * kubectl get workflows -n argo
+Get workflow details
+* kubectl describe workflows k8s-jobs-nv7n9 -n argo
+Submit workflow with namespace and service account
+* argo submit --serviceaccount=workflow --namespace argo workflow2.yaml
 
 #### Argo authentication 
 Get all argo role bindings 
